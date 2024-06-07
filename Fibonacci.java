@@ -6,27 +6,29 @@ public class Fibonacci {
 
         int Terms, First, Second;
 
-        Scanner Read = new Scanner(System.in);
+        Scanner Input = new Scanner(System.in);
 
         System.out.println("We are going to print the Fibonacci Series!!!\n");
 
         System.out.print("Enter the Number of Terms : ");
-        Terms = Read.nextInt();
+        Terms = Input.nextInt();
         System.out.println();
 
         System.out.print("Enter the First Number : ");
-        First = Read.nextInt();
+        First = Input.nextInt();
 
         System.out.print("Enter the Second Number : ");
-        Second = Read.nextInt();
+        Second = Input.nextInt();
 
         System.out.println();
 
-        Fibonacci(Terms, First, Second);
+        fibonacci(Terms, First, Second);
+        
+        Input.close();
 
     }
 
-    static void Fibonacci(int Terms, int Num1, int Num2){
+    static void fibonacci(int Terms, int Num1, int Num2){
 
         int Temp;
 

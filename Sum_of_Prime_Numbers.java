@@ -54,7 +54,7 @@ class Prime_Numbers implements Runnable{
         }
 
         Mutex.lock();
-        Main.Sum = Main.Sum + Total;
+        Sum_of_Prime_Numbers.Sum = Sum_of_Prime_Numbers.Sum + Total;
         Mutex.unlock();
 
     }
@@ -82,6 +82,8 @@ public class Sum_of_Prime_Numbers {
 
         System.out.println("The Sum of Prime Numbers till " + Terms + " is : " + Sum);
 
+        Input.close();
+        
     }
 
     static void Threading(long Terms){

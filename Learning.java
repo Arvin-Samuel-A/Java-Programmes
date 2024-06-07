@@ -1,8 +1,13 @@
-public class Learning {
+public class Learning{
 
-    public static void main(String[] args) {
+    public static void main(String args[]){
 
-        long Num;
+        int a[];
+
+        a = new int[10];
+        a = new int[20];
+
+        return;
 
     }
 

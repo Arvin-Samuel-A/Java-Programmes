@@ -14,17 +14,19 @@ public class Factorial {
         Num = Input.nextInt();
         System.out.println();
 
-        Output = Factorial(Num);
+        Output = factorial(Num);
 
         System.out.print("The Factorial of " + Num + " is : " + Output);
 
+        Input.close();
+
     }
 
-    static long Factorial(long Num){
+    static long factorial(long Num){
 
         if (Num>1) {
 
-            return Num * Factorial(Num - 1);
+            return Num * factorial(Num - 1);
 
         }
 

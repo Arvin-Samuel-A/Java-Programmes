@@ -9,7 +9,7 @@ public class File_Handling {
     public static void main(String[] args){
 
         try {
-            Read();
+            Input();
         }
 
         catch (IOException e){
@@ -38,17 +38,19 @@ public class File_Handling {
 
     }
 
-    static void Read() throws IOException, FileNotFoundException{
+    static void Input() throws IOException, FileNotFoundException{
 
         File MyFile = new File("First.txt");
 
-        Scanner Read = new Scanner(MyFile);
+        Scanner Input = new Scanner(MyFile);
 
-        while (Read.hasNextLine()){
+        while (Input.hasNextLine()){
 
-            System.out.println(Read.nextLine());
+            System.out.println(Input.nextLine());
 
         }
+        
+        Input.close();
 
     }
 

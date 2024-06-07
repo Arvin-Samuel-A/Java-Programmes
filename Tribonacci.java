@@ -6,29 +6,31 @@ public class Tribonacci {
 
         int Terms, First, Second, Third;
 
-        Scanner Read = new Scanner(System.in);
+        Scanner Input = new Scanner(System.in);
 
         System.out.println("We are going to print the Tribonacci Series!!!\n");
 
         System.out.print("Enter the Number of Terms : ");
-        Terms = Read.nextInt();
+        Terms = Input.nextInt();
         System.out.println();
 
         System.out.print("Enter the First Number : ");
-        First = Read.nextInt();
+        First = Input.nextInt();
 
         System.out.print("Enter the Second Number : ");
-        Second = Read.nextInt();
+        Second = Input.nextInt();
 
         System.out.print("Enter the Third Number : ");
-        Third = Read.nextInt();
+        Third = Input.nextInt();
         System.out.println();
 
-        Tribonacci(Terms, First, Second, Third);
+        tribonacci(Terms, First, Second, Third);
+        
+        Input.close();
 
     }
 
-    static void Tribonacci(int Terms, int Num1, int Num2, int Num3){
+    static void tribonacci(int Terms, int Num1, int Num2, int Num3){
 
         int Temp1, Temp2;
 

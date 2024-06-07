@@ -37,6 +37,7 @@ public class Sorting_a_LinkedList {
         Print_Arr(Arr);
         System.out.print("]\n");
 
+        Input.close();
 
     }
 

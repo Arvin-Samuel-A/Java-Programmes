@@ -37,6 +37,7 @@ public class Sorting_an_ArrayList {
         Print_Arr(Arr);
         System.out.print("]\n");
 
+        Input.close();
 
     }
 
